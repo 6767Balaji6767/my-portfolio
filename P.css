@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+/* Social Icons (You can keep your current styling) */
+.social-icons-top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Styling the Projects Link as a Box */
+.projects-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff9800; /* Orange background for the box */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    font-weight: bold;
+    border: 2px solid #ff9800; /* Orange border around the box */
+}
+
+.projects-link:hover {
+    background-color: #ffffff; /* Change background to white on hover */
+    color: #ff9800; /* Change text color to orange on hover */
+    transform: scale(1.1); /* Slightly enlarge the box on hover */
+    border-color: #ffffff; /* Change border color to white on hover */
+}
+
+/* Mobile responsiveness for Projects Box (optional) */
+@media screen and (max-width: 768px) {
+    .projects-link {
+        padding: 10px 20px; /* Smaller padding on mobile */
+        font-size: 16px; /* Smaller font size */
+    }
+}
+
+/* Home Link in Header */
+.home-link {
+    color: #ff9800;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.home-link:hover {
+    color: #ffffff;
+}
+
+/* Projects Section Styles */
+#projects {
+    margin-top: 80px; /* Offset the header */
+    padding: 50px 20px;
+    background-color: #000000;
+    color: #fff;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project {
+    background-color: #d40c0c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+}
+
+/* Hover Effect for Projects */
+.project:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Responsiveness for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr; /* Stack projects vertically on smaller screens */
+    }
+
+    .social-icons-top {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+}
+

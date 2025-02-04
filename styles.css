@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #07aeb9;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #078aa1, #b8a70d);
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn, .btn-outline {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: #121212;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ffb74d;
+}
+
+.btn-outline {
+    border: 2px solid #ff9800;
+    color: #ff9800;
+}
+
+.btn-outline:hover {
+    background-color: #e6f700;
+    color: #121212;
+}
+
+/* Container for Social Media Icons */
+.social-icons-top {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for effect */
+    z-index: 1000;
+}
+
+/* Styling for Each Icon */
+.social-icons-top a {
+    display: inline-block;
+    padding: 8px;
+    background-color: #ffffff; /* White background for each icon */
+    border-radius: 50%; /* Circle shape for each icon */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.social-icons-top a:hover {
+    background-color: #ff9800; /* Change background color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+
+
+
+/* About Me Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    margin: 10px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.highlight {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* Skills Section */
+h3 {
+    font-size: 2rem;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #2a2a2a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff9800;
+    transition: 0.3s;
+}
+
+.skill i {
+    font-size: 1.5rem;
+}
+
+.skill:hover {
+    background: #ff9800;
+    color: #121212;
+}
+/* Resume Download Button */
+.resume-btn {
+    display: inline-block;
+    background: #7bff00;
+    color: #121212;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.resume-btn i {
+    margin-left: 8px;
+}
+
+.resume-btn:hover {
+    background: #e41203;
+}
+.projects-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff9800; /* Orange background for the box */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    font-weight: bold;
+    border: 2px solid #ff9800; /* Orange border around the box */
+}
+
+.projects-link:hover {
+    background-color: #ffffff; /* Change background to white on hover */
+    color: #ff9800; /* Change text color to orange on hover */
+    transform: scale(1.1); /* Slightly enlarge the box on hover */
+    border-color: #ffffff; /* Change border color to white on hover */
+}
+
+/* Mobile responsiveness for Projects Box (optional) */
+@media screen and (max-width: 768px) {
+    .projects-link {
+        padding: 10px 20px; /* Smaller padding on mobile */
+        font-size: 16px; /* Smaller font size */
+    }
+}
